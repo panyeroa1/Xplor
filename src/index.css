@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar styles (improved) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray for a subtle background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Soft gray for the scrollbar thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Darker gray on hover */
+}
+
+/* Dark mode styles (refined) */
+.dark {
+  background-color: #1f2937; /* Darker gray for a modern look */
+  color: #f3f4f6; /* Slightly off-white for better contrast */
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #2d3748; /* Darker gray for the track */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Soft gray for the thumb, consistent with light mode */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Darker gray on hover */
+}
+
+/* Additional Styling (Optional) */
+.container {
+  max-width: 1200px; /* Limit container width for better readability */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Give headings a bolder look */
+}
+
+p {
+  line-height: 1.6; /* Improve readability with slightly more spacing */
+}
+
+a {
+  color: #3b82f6; /* A nice blue for links */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.2s ease; /* Smooth transition on hover */
+}
+
+a:hover {
+  color: #2563eb; /* Darker blue on hover */
+}
